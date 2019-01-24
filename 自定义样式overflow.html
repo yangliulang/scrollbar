@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+    <title>�Զ�����ʽoverflow</title>
+    <style type="text/css">
+      body,
+      div,
+      dl,
+      dt,
+      dd,
+      ul,
+      ol,
+      li,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      pre,
+      form,
+      fieldset,
+      input,
+      textarea,
+      p,
+      blockquote,
+      th,
+      td {
+        margin: 0;
+        padding: 0;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      fieldset,
+      img {
+        border: 0;
+      }
+      address,
+      caption,
+      cite,
+      code,
+      dfn,
+      em,
+      strong,
+      th,
+      var {
+        font-style: normal;
+        font-weight: normal;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      caption,
+      th {
+        text-align: left;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: 100%;
+        font-weight: normal;
+      }
+      q:before,
+      q:after {
+        content: ;
+      }
+      abbr,
+      acronym {
+        border: 0;
+      }
+
+      .scrollbar {
+        margin: 20px;
+        width: 300px;
+        height: 300px;
+        background: #303030;
+        color: #ccc;
+      }
+      .scrollbar-track {
+        float: right;
+        height: 300px;
+        width: 6px;
+        background: #3c3c3c;
+      }
+      .scrollbar-handle {
+        background: #616161;
+        height: 80px;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      .handle-hover {
+        background: #777;
+      }
+      .scrollbar-area {
+        float: left;
+        width: 294px;
+        height: 300px;
+        overflow: hidden;
+      }
+
+      .scrollbar1 {
+        margin: 20px;
+        width: 600px;
+        height: 298px;
+        background: #303030;
+        color: #ccc;
+      }
+      .scrollbar1 .scrollbar-track {
+        height: 6px;
+        line-height: 6px;
+        width: 600px;
+        background: #3c3c3c;
+      }
+      .scrollbar1 .scrollbar-handle {
+        background: #616161;
+        height: 6px;
+        line-height: 6px;
+        overflow: hidden;
+        width: 80px;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      .scrollbar1 .handle-hover {
+        background: #777;
+      }
+      .scrollbar1 .scrollbar-area {
+        height: 292px;
+        width: 600px;
+        overflow: hidden;
+      }
+      .scrollbar1 .scroll-content {
+        height: 292px;
+      }
+      .scrollbar1 .scrollbar-area p {
+        float: left;
+      }
+    </style>
+    <script type="text/javascript" src="jq.js"></script>
+    <script type="text/javascript" src="pz_scrollbar.js"></script>
+  </head>
+
+  <body style="height:2000px; padding:100px;">
+    <!--��y��������������ͳ��ֹ�����-->
+    <div class="J_PZScrollbar scrollbar" data-dir="y">
+      <div class="scrollbar-track"><div class="scrollbar-handle"></div></div>
+      <div class="scrollbar-area">
+        <div class="scroll-content">
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+        </div>
+      </div>
+    </div>
+
+    <!--��y��������û������������ع�����-->
+    <div class="J_PZScrollbar scrollbar" data-dir="y">
+      <div class="scrollbar-track"><div class="scrollbar-handle"></div></div>
+      <div class="scrollbar-area">
+        <div class="scroll-content">
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+        </div>
+      </div>
+    </div>
+    <!--��x��������������ͳ��ֹ�����-->
+    <div class="J_PZScrollbar scrollbar1" data-dir="x">
+      <div class="scrollbar-area">
+        <div class="scroll-content" style="width:3000px;">
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+        </div>
+      </div>
+      <div class="scrollbar-track"><div class="scrollbar-handle"></div></div>
+    </div>
+    <!--��x��������û������������ع�����-->
+    <div class="J_PZScrollbar scrollbar1" data-dir="x">
+      <div class="scrollbar-area">
+        <div class="scroll-content" style="width:300px;">
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+          <p>wefwefwef</p>
+        </div>
+      </div>
+      <div class="scrollbar-track"><div class="scrollbar-handle"></div></div>
+    </div>
+    <script>
+      $(function() {
+        //��ʼ��ҳ��������Ҫ������������
+        PZScrollbar.init($('.J_PZScrollbar'));
+      });
+    </script>
+  </body>
+</html>
